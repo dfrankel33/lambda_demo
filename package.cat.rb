@@ -67,7 +67,7 @@ resource "s3_lambda_inception_function", type: "rs_aws_lambda.function" do
   handler "s3-lambda-inception.handler"
   role ""
   code do {
-    "ZipFile": ""
+    "ZipFile": "UEsDBBQAAAAIAK0GiUvt09y5qAAAAPUAAAAWABwAczMtbGFtYmRhLWluY2VwdGlvbi5weVVUCQADBTQrWgU0K1p1eAsAAQTQBwAABNAHAABVTksLwjAMvvdXlF26waiH3QQPKhOGj4O6k4yxR4aFrq1dJuKvt3PKWCCQL/keEa3RFqnuiBinUqOO/qC3UoqSW3j00CEhNTT0XqhagvXhCQpDWmmF8MJgSairuYA7aAGtcNyRf2PpOWFZSL0FtmZo/hbGC75iZ6XoavyAV1I4vs+6iE1X3hupizpvhAR/bhHSX8Alyjfpdh9fh5hpt0sO8Wl9jFkWkA9QSwECHgMUAAAACACtBolL7dPcuagAAAD1AAAAFgAYAAAAAAABAAAApIEAAAAAczMtbGFtYmRhLWluY2VwdGlvbi5weVVUBQADBTQrWnV4CwABBNAHAAAE0AcAAFBLBQYAAAAAAQABAFwAAAD4AAAAAAA="
   } end
 end
 
