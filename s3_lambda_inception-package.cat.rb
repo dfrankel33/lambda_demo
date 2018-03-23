@@ -28,6 +28,7 @@ Resources:
           Principal:
             Service:
             - lambda.amazonaws.com
+            - apigateway.amazonaws.com
           Action:
           - sts:AssumeRole
       Path: \"/\"
@@ -50,6 +51,15 @@ Resources:
             Action:
             - s3:PutObject
             Resource: !Sub arn:aws:s3:::${BucketName}/*
+      - PolicyName: apigw
+        PolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+          - Effect: Allow
+            Action:
+            - iam:PassRole
+            - 'lambda:*'
+            Resource: '*'
 Outputs:
   RoleArn:
     Description: The created Role ARN
